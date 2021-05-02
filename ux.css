@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+*{
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
+}
+body{
+
+   background: linear-gradient(to bottom right, #FBAB7E, #F7CE68);
+  background-size: 100vw 105vh;
+}
+
+a:link {
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F76B1C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: #F76B1C;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.name>a{
+  font-family: 'Black Han Sans', sans-serif;
+  position : fixed;
+  color:#F76B1C;
+  left:30px;
+  top:70px;
+  font-size: 64px;
+}
+#description{
+  position: fixed;
+  font-weight: 700;
+  color:#F76B1C;
+  text-align:left;
+  left:30px;
+  top:130px;
+  font-size: 20px;
+}
+#menu{
+  position: fixed;
+  font-weight: 700;
+  text-align:left;
+  left: 30px;
+  top: 210px;
+  font-size: 24px;
+}
+
+#gallery{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.imgbox > img{
+  height: 80vh;
+ }
+
+ .visible{
+  display:inline;
+ }
+
+ .invisible{
+  display: none;
+ }
+ .prev {
+   left: 59px;
+   cursor: pointer;
+   position: relative;
+   width: auto;
+   height: 10vh;
+   padding: 20px;
+   color: #F76B1C;
+   font-weight: bold;
+   font-size: 40px;
+ }
+
+ .next {
+   right: 59px;
+   cursor: pointer;
+   position: relative;
+   width: auto;
+   height: 10vh;
+   padding: 20px;
+   color: #F76B1C;
+   font-weight: bold;
+   font-size: 40px;
+   z-index: 99;
+ }
+
+ .prev:hover,
+ .next:hover {
+   background-color: rgba(0,0,0,0.8);
+}
+#description2{
+  float: right;
+  top: 10vh;
+  right: 4vw;
+  position: fixed;
+  width: 19vw;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: rgba(255,255,255,0.7);
+}
+#title{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 28px;
+  color: #F76B1C;
+  line-height: 1.2;
+}
