@@ -9,29 +9,115 @@
 		  <title>Hyun Kark</title>
 
   </head>
-  <link rel="stylesheet" href="index.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+  /*화살표를 absolute로 잡고, or relative를 주고 -xxpx 로 조정하면 된다 z index를 999로 주면 제일 위로 올라감*/
+  *{/*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Rokkitt', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a:link {
+      color: #000000;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:visited {
+      color: #000000;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:hover {
+      color: #F7FF00;
+      background-color: transparent;
+      text-decoration: none;
+  }
+  a:active {
+      color: #F7FF00;
+      background-color: transparent;
+      text-decoration: none;
+  }
+
+  h1{
+    position: fixed;
+    text-align: left;
+    right: 7.8%;
+    bottom: 16.8%;
+    letter-spacing: -0.53px;
+    font-family: Rokkitt, serif;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #000000;
+    z-index: 3;
+    user-drag: none;
+    user-select: none;
+  }
+  #about{
+    position: fixed;
+    top: 68px;
+    right: 169px;
+    z-index: 3;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    user-drag: none;
+    user-select: none;
+  }
+  #homebutton{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 158px;
+    top: 64px;
+  }
+  #homebutton_img{
+    width: 48px;
+    height: 48px;
+  }
+  body{
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #Roomiz_picture{
+    position: fixed;
+    top: 5vw;
+    left:25vw;
+    z-index: 1;
+    width: 50vw;
+    opacity:0;
+  }
+  #menu{
+    position: fixed;
+    z-index: 3;
+    font-family: Rokkitt, serif;
+    font-size: 36px;
+    line-height:normal;
+    top: 108px;
+    left: 15.3%;
+  }
+  </style>
 
   <body>
-
-		<!-- <a id = "button" href="grid.html">
-	    <h2>works 👉</h2>
-	  </a> -->
-	  <!-- <div id="gallery"> -->
 	    <!--first page-->
-	      <h1>Hello✋<br>
-          I'm💕Hyun Kark✨<br>
-          I'm a Seoul Based<br>
-          🌈UX Designer
-	      </h1>
-      <h2>
-        <a href="About.html">About</a><br/>
-      </h2>
+    <h1>Hello✋<br>
+        I'm💕Hyun Kark✨<br>
+        I'm a UX/Graphic<br>
+        Designer🌈
+	  </h1>
+    <h2>
+      <a id="about" href="About.html">About</a><br/>
+      <a id="homebutton" href="index.html">
+        <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
+      </a>
+    </h2>
 	  <!-- </div> -->
     <div id="menu">
       <p><a id="Roomiz" href="sf.html"
         onmouseover="
-        document.querySelector('#Roomiz_picture').style.opacity='1'
-        "
+        document.querySelector('#Roomiz_picture').style.opacity='1'"
         onmouseout="
         document.querySelector('#Roomiz_picture').style.opacity='0'
         ">Roomiz</a><br/>
