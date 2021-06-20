@@ -5,51 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Hyun Kark</title>
+
 </head>
-<script src="script5.js"></script>
-<script
-src="https://code.jquery.com/jquery-3.3.1.js"
-integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-crossorigin="anonymous"></script>
-<link rel="stylesheet" href="sf.css">
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+  *{font-family: 'Rokkitt', 'Noto Sans KR', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-drag: none;
+    user-select: none;
+
+  }
+  a:link {color: #FFFFFF; background-color: transparent; text-decoration: none;}
+  a:visited {color: #FFFFFF; background-color: transparent; text-decoration: none;}
+  a:hover {color: #f7ee39; background-color: transparent; text-decoration: none;}
+  a:active {color: #f7ee39; background-color: transparent; text-decoration: none;}
+
+  #background_image{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 0;
+  }
+  #homebutton{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 158px;
+    top: 64px;
+    z-index: 2;
+  }
+  #homebutton_img{
+    width: 48px;
+    height: 48px;
+  }
+  #menu{
+    position: fixed;
+    z-index: 3;
+    font-family: Rokkitt, serif;
+    font-size: 36px;
+    line-height:normal;
+    top: 108px;
+    left: 15.3%;
+  }
+  #contentBox{
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 1;
+    /*background-color: #ffbcb8;*/
+    left: 36.4%;
+    top: 108px;
+    width: 55.6%;
+  }
+  #title{
+    color: #FFFFFF;
+    display: block;
+    font-size: 96px;
+  }
+  #description{
+    display: block;
+    font-size: 24px;
+    letter-spacing: -0.37px;
+    margin: 0 0 46px 0;
+  }
+  #content{
+    display: block;
+    font-size: 24px;
+  }
+  .contentpicture{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .box1{
+    display: block;
+    width: 100%;
+  }
+  #wrap{width: 100%; height: 800px; padding: 0; overflow: hidden; margin:0 0 20px 0;}
+  #frame {width: 125%; height: 1000px;}
+  #frame {
+    -ms-zoom: 1;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.8);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+  }
+</style>
 
 <body>
-  <h1 class="name"><a href="index.html">🌈</a></h1>
-  <div id="menu">
-    <p><a id="Roomiz" href="sf.html">Roomiz</a><br/>
-      <a href="beatles.html">hit it!</a><br/>
-      <a href="typoessay.html">Sentiment</a><br/>
-      <a href="2018diary.html">Bookworm</a><br/>
-      <a href="intern.html">LG Display Reseach</a><br>
-      <a id="sf" href="sf.html">SF Book Design</a><br>
-      <a href="2018diary.html">2018 Diary</a>
-    </p>
-  </div>
   <h2>
-    <a href="About.html">About</a><br/>
+    <img id="background_image" src="img/stars.gif" alt="background image">
+    <a id="homebutton" href="index.html">
+      <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
+    </a>
   </h2>
-  <div id="gallery">
-    <a class="prev" onclick="previous()"><</a>
-    <div class="imgbox visible" id="imgbox1"><img src="img/sf2.jpg"></div>
-    <div class="imgbox invisible" id="imgbox2"><img src="img/sf1.png"></div>
-    <div class="imgbox invisible" id="imgbox3"><img src="img/sf3.jpg"></div>
-    <div class="imgbox invisible" id="imgbox4"><img src="img/sf4.jpg"></div>
-    <div class="imgbox invisible" id="imgbox5">
-      <iframe width="1000" height="800" src="https://www.youtube.com/embed/dX3QlL0zUDs?rel=0&amp;controls=0&amp;showinfo=0"
-        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-      </iframe>
-    </div>
-    <a class="next" onclick="next()">></a>
+  <div id="menu">
+    <a id="Roomiz" href="roomiz.html">Roomiz</a><br/>
+    <a href="hitit.html">hit it!</a><br/>
+    <a href="sentiment.html">sen·ti·ment</a><br/>
+    <a href="2018summer.html">2018 summer playlist</a><br/>
+    <a href="LGDisplay.html">LG Display Project</a><br>
+    <a href="2021postcard.html">2021 postcard</a><br>
+    <a href="sf.html">SF Series Redesign</a>
   </div>
+  <span id="contentBox">
+    <span id="title">
+    SF Series Redesign<br>
+    </span>
+    <span id="description">
+      Mar 2016 - May 2016<br>
+      Personal Project<br>
+      Graphic Design, Editorial Design<br>
+    </span>
+    <span id="content">
+      이 작업은 2016년 2학기에 진행된 타이포그래피(3), sf 고전 복각 프로젝트의 일환으로 진행되었다.
+      소설의 키 비주얼을 포함한 시각화 포스터는 '로봇을 통한 냉전시대의 미국과 소련의 화해, 그리고 세계 평화' 라는 주제에 부합하도록 디자인했다.
+      본문은 영문과 한글 폰트를 섞어짰으며 한글 부리꼴의 매력을 보여주는 동시에 글줄이 잘 읽히도록 디자인했다. 책의 시놉시스와 목차 페이지에는 아이덴티티 이미지를 넣었다.
+    </span>
+      <img class="contentpicture" src="img/sf1.png" alt="sky">
+      <div style:"display: block; text-align: center;"><img style="display: inline; width: 40%;" src="img/sf2.jpg" alt="sky"></div>
+    <div class="contentpicture">
+      <img src="img/sf3.jpg" style="display: inline; width: 35%;" alt="sky">
+      <img src="img/sf4.jpg" style="display: inline; width: 60%;" alt="sky">
+    </div>
+    <iframe class="contentpicture" width="900" height="800" src="https://www.youtube.com/embed/dX3QlL0zUDs?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
 
-
-  <h3 id="description2">
-    <div id="title">SF Classics Re-Design Project</div>
-    <div id="date"> Sep 2016 - Nov 2016</br>
-    School Project</div>
-    
-  이 작업은 2016년 2학기에 진행된 타이포그래피(3), sf 고전 복각 프로젝트의 일환으로 진행되었다.
-  소설의 키 비주얼을 포함한 시각화 포스터는 '로봇을 통한 냉전시대의 미국과 소련의 화해, 그리고 세계 평화' 라는 주제에 부합하도록 디자인했다.
-  본문은 영문과 한글 폰트를 섞어짰으며 한글 부리꼴의 매력을 보여주는 동시에 글줄이 잘 읽히도록 디자인했다. 책의 시놉시스와 목차 페이지에는 아이덴티티 이미지를 넣었다.
-  </h3>
+</body>
 </html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyun Kark</title>
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+  *{font-family: 'Rokkitt', 'Noto Sans KR', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-drag: none;
+    user-select: none;
+  }
+  a:link {color: #000000; background-color: transparent; text-decoration: none;}
+  a:visited {color: #000000; background-color: transparent; text-decoration: none;}
+  a:hover {color: #4c6ef4; background-color: transparent; text-decoration: none;}
+  a:active {color: #4c6ef4; background-color: transparent; text-decoration: none;}
+
+  #homebutton{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 158px;
+    top: 64px;
+  }
+  #homebutton_img{
+    width: 48px;
+    height: 48px;
+  }
+  #menu{
+    position: fixed;
+    z-index: 3;
+    font-family: Rokkitt, serif;
+    font-size: 36px;
+    line-height:normal;
+    top: 108px;
+    left: 15.3%;
+  }
+  #contentBox{
+    position: absolute;
+    z-index: 1;
+    /*background-color: #ffbcb8;*/
+    left: 36.4%;
+    top: 108px;
+    width: 55.6%;
+  }
+  #title{
+    display: block;
+    font-size: 96px;
+  }
+  #description{
+    display: block;
+    font-size: 24px;
+    letter-spacing: -0.37px;
+    margin: 0 0 46px 0;
+  }
+  #content{
+    display: block;
+    font-size: 24px;
+  }
+  .contentpicture{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .box1{
+    display: block;
+    width: 100%;
+  }
+
+</style>
+
+<body>
+  <h2>
+    <a id="homebutton" href="index.html">
+      <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
+    </a>
+  </h2>
+  <div id="menu">
+    <a id="Roomiz" href="roomiz.html">Roomiz</a><br/>
+    <a href="hitit.html">hit it!</a><br/>
+    <a href="sentiment.html">sen·ti·ment</a><br/>
+    <a href="2018summer.html">2018 summer playlist</a><br/>
+    <a href="LGDisplay.html">LG Display Project</a><br>
+    <a href="2021postcard.html">2021 postcard</a><br>
+    <a href="sf.html">SF Series Redesign</a>
+  </div>
+  <span id="contentBox">
+    <span id="title">
+    LG Display Project<br>
+    </span>
+    <span id="description">
+      Dec 2018 - Feb 2019<br>
+      Team Project (3 people)<br>
+      Service Ideation, Illustration, Video editing<br>
+    </span>
+    <span id="content">
+      A RFP(​Request for proposal) project. The goal was to develop a new product that could be used in the future that can be made with OLED Displays.
+      Made personas and scenarios for the new display product. The initial pitch was a cylinder disaply that can substitite pillars in architecture.
+    </span>
+    <div class="contentpicture">
+      <img src="img/LGDisplay/1.png" style="display: inline; width: 48%;" alt="sky">
+      <img src="img/LGDisplay/2.png" style="display: inline; width: 48%;" alt="sky">
+      <img src="img/LGDisplay/3.png" style="display: inline; width: 48%;" alt="sky">
+      <img src="img/LGDisplay/4.png" style="display: inline; width: 48%;" alt="sky">
+    </div>
+    <div class="contentpicture">
+      <img class="box1" src="img/LGDisplay/fitness1.png" alt="sky">
+      <img class="box1" src="img/LGDisplay/fitness2.png" alt="sky">
+    </div>
+    <span id="content">
+      Whilst developing the pillar display, we came across this new idea of sportive display-a display that can be used as a yoga mat and also as a partition screen.
+      The final product was a 2 min video about the usage of the screen.
+    </span>
+    <div style="display: block; text-align: center; ">
+    <iframe style ="display: inline; width: 960px; height:600px; margin: 20px 0;" src="https://drive.google.com/file/d/1r2Kiq5PhGctsuSckk0fTo3el6bepKWDa/preview"></iframe>
+    </div>
+
+
+
+  </span>
+
+</body>
+</html>

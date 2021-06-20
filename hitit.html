@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyun Kark</title>
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+  *{font-family: 'Rokkitt', 'Noto Sans KR', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-drag: none;
+    user-select: none;
+  }
+  a:link {color: #000000; background-color: transparent; text-decoration: none;}
+  a:visited {color: #000000; background-color: transparent; text-decoration: none;}
+  a:hover {color: #4c6ef4; background-color: transparent; text-decoration: none;}
+  a:active {color: #4c6ef4; background-color: transparent; text-decoration: none;}
+
+  body{
+    height: 100vh;
+    background: linear-gradient(#FFFFFF, #4c6ef4 80vh);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #homebutton{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 158px;
+    top: 64px;
+  }
+  #homebutton_img{
+    width: 48px;
+    height: 48px;
+  }
+  #menu{
+    position: fixed;
+    z-index: 3;
+    font-family: Rokkitt, serif;
+    font-size: 36px;
+    line-height:normal;
+    top: 108px;
+    left: 15.3%;
+  }
+  #contentBox{
+    position: absolute;
+    z-index: 1;
+    /*background-color: #ffbcb8;*/
+    left: 36.4%;
+    top: 108px;
+    width: 55.6%;
+  }
+  #title{
+    display: block;
+    font-size: 96px;
+  }
+  #description{
+    display: block;
+    font-size: 24px;
+    letter-spacing: -0.37px;
+    margin: 0 0 46px 0;
+  }
+  #content{
+    display: block;
+    font-size: 24px;
+  }
+  .contentpicture{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .box1{
+    display: block;
+    width: 100%;
+  }
+  #wrap{width: 100%; height: 800px; padding: 0; overflow: hidden; margin:0 0 20px 0;}
+  #frame {width: 125%; height: 1000px;}
+  #frame {
+    -ms-zoom: 1;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.8);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+  }
+</style>
+
+<body>
+  <h2>
+    <a id="homebutton" href="index.html">
+      <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
+    </a>
+  </h2>
+  <div id="menu">
+    <a id="Roomiz" href="roomiz.html">Roomiz</a><br/>
+    <a href="hitit.html">hit it!</a><br/>
+    <a href="sentiment.html">sen·ti·ment</a><br/>
+    <a href="2018summer.html">2018 summer playlist</a><br/>
+    <a href="LGDisplay.html">LG Display Project</a><br>
+    <a href="2021postcard.html">2021 postcard</a><br>
+    <a href="sf.html">SF Series Redesign</a>
+  </div>
+  <span id="contentBox">
+    <span id="title">
+    hit it!<br>
+    </span>
+    <span id="description">
+      Sep 2019 - Dec 2019<br>
+      Personal Project (Graduation Project)<br>
+      Service Ideation, GUI, Prototyping<br>
+    </span>
+    <span id="content">
+      Got no time to work out? Don't know how to work out? No more of those excuses.<br>
+      Let's hit the road with hit it!<br><br>
+      'hit it!'is a smartphone app that will help you make use of those public parks exercise machines that you've never known how to use.
+       By selecting workout time and what park you'd like to workout at, hit it will conveniently come up with a full workout schedule tailored for you in a second.
+       You can also catch up with the latest workout events led by state facilities or the government with ease.
+    </span>
+    <div class="contentpicture">
+      <div class="box1" style="background-color: #fbfbfb; height: 60px;"></div>
+      <img class="box1" src="img/hitit/1.gif" alt="sky">
+      <img class="box1" src="img/hitit/2.gif" alt="sky">
+      <img class="box1" src="img/hitit/3.gif" alt="sky">
+      <img class="box1" src="img/hitit/4.gif" alt="sky">
+      <div class="box1" style="background-color: #fbfbfb; height: 60px;"></div>
+    </div>
+    <div id="wrap">
+      <iframe id="frame" src="https://share.protopie.io/6b90d95ba1" frameborder="0">
+        <p>your browser does not support iframe</p>
+      </iframe>
+    </div>
+    <span id="content">
+      The final product is a high fidelity prototype, enabled by protopie.
+    </span>
+    <div class="contentpicture">
+      <img src="img/hitit/mockup1.png" style="display: inline; width: 40%;" alt="sky">
+      <img src="img/hitit/mockup2.png" style="display: inline; width: 48%;" alt="sky">
+      <div style="text-align: right;">
+        <img src="img/hitit/mockup3.png" style="display: inline; width: 35%;" alt="sky">
+        <img src="img/hitit/mockup4.png" style="display: inline; width: 35%;" alt="sky">
+      </div>
+      <img src="img/hitit/mockup5.png" style="display: inline-block; width: 100%;" alt="sky">
+    </div>
+    <span id="content">
+      Also, usable t-shirts and waterbottle, and banners for sports event and posters were designed following the same design system.
+      The GUI and the branded goodies will give an integrated look for sporting events.
+    </span>
+    <img class="contentpicture" src="img/hitit/scene.png" alt="sky">
+
+
+
+  </span>
+
+</body>
+</html>

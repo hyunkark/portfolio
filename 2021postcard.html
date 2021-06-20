@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hyun Kark</title>
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+  *{font-family: 'Rokkitt', 'Noto Sans KR', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-drag: none;
+    user-select: none;
+  }
+  a:link {color: #000000; background-color: transparent; text-decoration: none;}
+  a:visited {color: #000000; background-color: transparent; text-decoration: none;}
+  a:hover {color: #870937; background-color: transparent; text-decoration: none;}
+  a:active {color: #870937; background-color: transparent; text-decoration: none;}
+
+  #background_image{
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.7;
+  }
+  #homebutton{
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    left: 158px;
+    top: 64px;
+    z-index: 2;
+  }
+  #homebutton_img{
+    width: 48px;
+    height: 48px;
+  }
+  #menu{
+    position: fixed;
+    z-index: 3;
+    font-family: Rokkitt, serif;
+    font-size: 36px;
+    line-height:normal;
+    top: 108px;
+    left: 15.3%;
+  }
+  #contentBox{
+    position: absolute;
+    z-index: 2;
+    /*background-color: #ffbcb8;*/
+    left: 36.4%;
+    top: 108px;
+    width: 55.6%;
+  }
+  #title{
+    display: block;
+    font-size: 96px;
+  }
+  #description{
+    display: block;
+    font-size: 24px;
+    letter-spacing: -0.37px;
+    margin: 0 0 46px 0;
+  }
+  #content{
+    display: block;
+    font-size: 24px;
+  }
+  .contentpicture{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .box1{
+    display: block;
+    width: 100%;
+  }
+
+</style>
+
+<body>
+  <h2>
+    <img id="background_image" src="img/2021postcard1.png" alt="background image">
+    <a id="homebutton" href="index.html">
+      <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
+    </a>
+  </h2>
+  <div id="menu">
+    <a id="Roomiz" href="roomiz.html">Roomiz</a><br/>
+    <a href="hitit.html">hit it!</a><br/>
+    <a href="sentiment.html">sen·ti·ment</a><br/>
+    <a href="2018summer.html">2018 summer playlist</a><br/>
+    <a href="LGDisplay.html">LG Display Project</a><br>
+    <a href="2021postcard.html">2021 postcard</a><br>
+    <a href="sf.html">SF Series Redesign</a>
+  </div>
+  <span id="contentBox">
+    <span id="title">
+    2021 postcard<br>
+    </span>
+    <span id="description">
+      Jan 2021 - Feb 2021<br>
+      Personal Project<br>
+      3D modeling, Graphic Design<br>
+    </span>
+    <span id="content">
+      A postcard celebrating a new year. Wishing the best for the forecoming year. 2021, also known as '辛丑年(the year of white cow)',
+      in north east asian culture, white cows has always been considered as somewhat mystical creatures that drives away the bad and bring in the good.
+      This is in a way, something I've put my wishes into upon making. May the global pandemic end soon.
+    </span>
+  <img class="contentpicture" src="img/2021postcard2.png" alt="sky">
+
+
+
+
+  </span>
+
+</body>
+</html>

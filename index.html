@@ -17,6 +17,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    user-drag: none;
+    user-select: none;
   }
   a:link {
       color: #000000;
@@ -29,16 +31,15 @@
       text-decoration: none;
   }
   a:hover {
-      color: #d14f5a;
+      color: #0017eb;
       background-color: transparent;
       text-decoration: none;
   }
   a:active {
-      color: #d14f5a;
+      color: #0017eb;
       background-color: transparent;
       text-decoration: none;
   }
-
   h1{
     position: fixed;
     text-align: left;
@@ -50,21 +51,60 @@
     font-weight: 600;
     line-height: 1.1;
     color: #000000;
-    z-index: 3;
-    user-drag: none;
-    user-select: none;
+    z-index: 0;
+
   }
+body{
+    background-image: url('https://media.giphy.com/media/u01ioCe6G8URG/giphy.gif');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+.picture{
+    position: fixed;
+    text-align: center;
+    /*background-color: rgba(255, 167, 161, 0.6);*/
+    width: 100vw;
+    height: 90vh;
+    z-index: 99;
+    pointer-events: none;
+}
+  .picture > img{
+    display: block;
+    margin: 15vh auto;
+    opacity:0;
+    }
+       #pic1{
+         height: 60vh;
+       }
+        #pic2{
+          height: 50vh;
+        }
+        #pic3{
+          height: 60vh;
+        }
+        #pic4{
+          height: 68vh;
+        }
+        #pic5{
+          width: 50vw;
+        }
+        #pic6{
+          height: 60vh;
+        }
+        #pic7{
+          height: 70vh;
+        }
   #about{
     position: fixed;
     top: 68px;
     right: 169px;
     z-index: 3;
     font-size: 40px;
-    font-weight: 600;
-    color: #000000;
+    font-weight: 500;
     user-drag: none;
     user-select: none;
 	}
+  /* home&menu */
   #homebutton{
     position: fixed;
     width: 48px;
@@ -75,19 +115,6 @@
   #homebutton_img{
     width: 48px;
     height: 48px;
-  }
-  body{
-    background-image: url('img/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  #Roomiz_picture{
-    position: fixed;
-    top: 5vw;
-    left:25vw;
-    z-index: 1;
-    width: 50vw;
-    opacity:0;
   }
   #menu{
     position: fixed;
@@ -113,24 +140,84 @@
         <img id="homebutton_img"src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/rainbow_1f308.png"alt="home button">
       </a>
     </h2>
-	  <!-- </div> -->
-    <img id="Roomiz_picture" src="12.jpg">
     <div id="menu">
-      <p><a id="Roomiz" href="roomiz.html"
+        <a id="Roomiz" href="roomiz.html"
         onmouseover="
-        document.querySelector('#Roomiz_picture').style.opacity='1'"
+        document.querySelector('#pic1').style.opacity='1'"
         onmouseout="
-        document.querySelector('#Roomiz_picture').style.opacity='0'
+        document.querySelector('#pic1').style.opacity='0'
         ">Roomiz</a><br/>
-        <a href="beatles.html">hit it!</a><br/>
-        <a href="typoessay.html">Sentiment</a><br/>
-        <a href="2018diary.html">Bookworm</a><br/>
-        <a href="intern.html">LG Display Reseach</a><br>
-        <a id="sf" href="sf.html">SF Book Design</a><br>
-        <a href="2018diary.html">2018 Diary</a>
-      </p>
+        <a href="hitit.html"
+        onmouseover="
+        document.querySelector('#pic2').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic2').style.opacity='0'"
+        >hit it!</a><br/>
+        <a href="sentiment.html"
+        onmouseover="
+        document.querySelector('#pic3').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic3').style.opacity='0'"
+        >sen·ti·ment</a><br/>
+        <a href="2018summer.html"
+        onmouseover="
+        document.querySelector('#pic4').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic4').style.opacity='0'"
+        >2018 summer playlist</a><br/>
+        <a href="LGDisplay.html"
+        onmouseover="
+        document.querySelector('#pic5').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic5').style.opacity='0'"
+        >LG Display Project</a><br>
+        <a href="2021postcard.html"
+        onmouseover="
+        document.querySelector('#pic6').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic6').style.opacity='0'"
+        >2021 postcard</a><br>
+        <a href="sf.html"
+        onmouseover="
+        document.querySelector('#pic7').style.opacity='1'"
+        onmouseout="
+        document.querySelector('#pic7').style.opacity='0'">SF Series Redesign</a>
     </div>
-
-
+    <!-- </div> -->
+    <div id="picturebox">
+        <div class="picture">
+           <img id="pic1" src="img/roomiz.png">
+        </div>
+        <div class="picture">
+           <img id="pic2" src="img/hitit.jpg">
+        </div>
+        <div class="picture">
+           <img id="pic3" src="img/sentiment.png">
+        </div>
+        <div class="picture">
+           <img id="pic4" src="img/2018summer.jpg">
+        </div>
+        <div class="picture">
+           <img id="pic5" src="img/lgDisplay.png">
+        </div>
+        <div class="picture">
+           <img id="pic6" src="img/2021postcard.jpg">
+        </div>
+        <div class="picture">
+           <img id="pic7" src="img/sf2.jpg">
+        </div>
+    </div>
+     <!--
+     <div id="menu">
+       <p><a id="Roomiz" href="roomiz.html">Roomiz</a><br/>
+         <a href="hitit.html">hit it!</a><br/>
+         <a href="sentiment.html">sen·ti·ment</a><br/>
+         <a href="2018summer.html">2018 summer playlist</a><br/>
+         <a href="LGDisplay.html">LG Display Project</a><br>
+         <a href="2021postcard.html">2021 postcard</a><br>
+         <a href="sf.html">SF Series Redesign</a>
+       </p>
+     </div>
+    -->
   </body>
 </html>
