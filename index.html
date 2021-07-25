@@ -126,6 +126,14 @@ body{
     left: 15.3%;
   }
   </style>
+  <script>
+    function mouseover(pic){
+      document.querySelector(pic).style.opacity='1';
+    }
+    function mouseout(pic){
+      document.querySelector(pic).style.opacity='0';
+    }
+  </script>
 
   <body>
 <!--first page-->
@@ -141,47 +149,13 @@ body{
       </a>
     </h2>
     <div id="menu">
-        <a id="Roomiz" href="roomiz.html"
-        onmouseover="
-        document.querySelector('#pic1').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic1').style.opacity='0'
-        ">Roomiz</a><br/>
-        <a href="hitit.html"
-        onmouseover="
-        document.querySelector('#pic2').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic2').style.opacity='0'"
-        >hit it!</a><br/>
-        <a href="sentiment.html"
-        onmouseover="
-        document.querySelector('#pic3').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic3').style.opacity='0'"
-        >sen·ti·ment</a><br/>
-        <a href="2018summer.html"
-        onmouseover="
-        document.querySelector('#pic4').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic4').style.opacity='0'"
-        >2018 summer playlist</a><br/>
-        <a href="LGDisplay.html"
-        onmouseover="
-        document.querySelector('#pic5').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic5').style.opacity='0'"
-        >LG Display Project</a><br>
-        <a href="2021postcard.html"
-        onmouseover="
-        document.querySelector('#pic6').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic6').style.opacity='0'"
-        >2021 postcard</a><br>
-        <a href="sf.html"
-        onmouseover="
-        document.querySelector('#pic7').style.opacity='1'"
-        onmouseout="
-        document.querySelector('#pic7').style.opacity='0'">SF Series Redesign</a>
+        <a href="roomiz.html" onmouseover="mouseover('#pic1')" onmouseout="mouseout('#pic1')">Roomiz</a><br/>
+        <a href="hitit.html" onmouseover="mouseover('#pic2')" onmouseout="mouseout('#pic2')">hit it!</a><br/>
+        <a href="sentiment.html" onmouseover="mouseover('#pic3')" onmouseout="mouseout('#pic3')">sen·ti·ment</a><br/>
+        <a href="2018summer.html" onmouseover="mouseover('#pic4')" onmouseout="mouseout('#pic4')">2018 summer playlist</a><br/>
+        <a href="LGDisplay.html" onmouseover="mouseover('#pic5')" onmouseout="mouseout('#pic5')">LG Display Project</a><br>
+        <a href="2021postcard.html" onmouseover="mouseover('#pic6')" onmouseout="mouseout('#pic6')">2021 postcard</a><br>
+        <a href="sf.html" onmouseover="mouseover('#pic7')" onmouseout="mouseout('#pic7')">SF Series Redesign</a>
     </div>
     <!-- </div> -->
     <div id="picturebox">
